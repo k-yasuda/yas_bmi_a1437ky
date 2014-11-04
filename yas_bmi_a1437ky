@@ -1,0 +1,19 @@
+puts "BMI Cheker"
+puts "anata no shincho(cm) wo input sitekudasai"
+a = gets.to_f
+puts "anata no taijyu(kg) wo input sitekudasai"
+b = gets.to_f
+
+bmi = b/((a/100)**2)
+
+puts "anata no BMI ha",bmi, "desu!!!"
+
+if bmi < 18.5
+	puts "yasesugi desu"
+
+elseif bmi >=25
+	puts "futorisugi desu"
+
+else 
+	puts "futuu desu"
+end
